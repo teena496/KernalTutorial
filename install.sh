@@ -16,7 +16,7 @@
 #package or removing an essential package, occurs then apt-get will abort.
 
 #Variables
-exitStatus=()
+#exitStatus=()
 
 ##########
 
@@ -31,14 +31,14 @@ printf "**********Updating and Upgrading Packages*******************\n"
   #in /etc/apt/sources.list(5). An update should always be performed before
   #an upgrade or dist-upgrade source:http://linux.die.net/man/8/apt-get
 sudo apt-get update --assume-yes
-exitStatus[0]=$? #update array with whether or not command executed properly
+#exitStatus[0]=$? #update array with whether or not command executed properly
 
 ## apt-get upgrade ##
   #apt-get upgrade will fetch new versions of packages existing on the
   #machine if APT knows about these new versions by way of apt-get update
   #source:http://linux.die.net/man/8/apt-get
 sudo apt-get upgrade --assume-yes
-exitStatus[1]=$? #update array with whether or not command executed properly
+#exitStatus[1]=$? #update array with whether or not command executed properly
 printf "::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n"
 printf "**********Installing basic server needs*********************\n"
 
